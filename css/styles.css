@@ -1,4 +1,7 @@
 /*LEFT SLIDER STYLE*/
+::-moz-selection { color: #007AFF; }
+::selection { color: #007AFF; }
+
 menu.left-slider{
 	list-style: none !important;
 	margin: 0px;
@@ -58,6 +61,49 @@ section{
 background-color:#007AFF;
 border-radius:2px;
 }
+/*##############HOME############*/
+section.home .content-section .logo-group{
+	text-align: center;
+}
+section.home .content-section .logo-group .logo-image{
+	width: 150px;
+}
+section.home .content-section .logo-group .logo-name{
+	font-size: 40px;
+}
+section.home .content-section .logo-group .logo-by{
+	font-size: 20px;
+}
+section.home .content-section .logo-group .logo-by span{
+	font-size: 30px;
+}
+section.home .content-section .home-content {
+	font-size: 15px;
+}
+section.home .content-section .home-content button{
+	padding: 10px 20px;
+	background-color: #ffffff;
+	border: 0px;
+	font-size: 20px;
+	color: #a18d6c;
+	opacity: 0.9;
+	font-weight: bold;
+}
+section.home .content-section .home-content button:hover{
+	opacity: 0.5;
+}
+section.home .content-section .home-content .signin-button{
+	text-align: center;
+	margin-top: 50px;
+}
+section.home .content-section .home-content .signin-form{
+	width: 800px;
+	height: 400px;
+	position: fixed;
+	top: 100px;
+	background-color: #ffffff;
+	display: none;
+}
 
 /*FOOTER*/
 .main-content .footer .button-control{
@@ -107,11 +153,23 @@ border-radius:2px;
 /*SOCIAL VIEW*/
 .footer .social-view{
 	position: fixed;
-	bottom: 40px;
+	bottom: 42px;
 	right: 10px;
 }
 .footer .social-view{
 	display: none;
+}
+.footer .social-view a{
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #007AFF;
+	border-radius: 0px;
+}
+.footer .social-view span{
+	color: #ffffff;
+}
+.footer .social-view figcaption{
+	background-color: #007AFF;
 }
 .footer .social-view ul{
 	padding: 0px;
@@ -119,7 +177,10 @@ border-radius:2px;
 .footer .social-view ul li{
 	padding: 0px 20px;
 }
-
+/*SETTING VIEW IN SOCIAL IMAGE*/
+.footer .social-view ul li{
+	width: 340px;
+}
 /*ACTIVE CLASS STYLE*/
 .left-slider .active{
 	background-color: #ffffff;

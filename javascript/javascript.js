@@ -16,6 +16,9 @@ $( document ).ready(function() {
   $(".footer .button-control .fa-arrow-circle-right").click( function () {
 		SetViewbyNextButton();
 	});
+	$("section.home .content-section .home-content button").click(function () {
+		SigninForm();
+	});
 });
 // resize set value
 $( window ).resize(function() {
@@ -90,4 +93,7 @@ function SetSocialViewDetails (link_href, image_src, title_des, button_des) {
 	// $(".footer .social-view ul li figure div img").attr("src", image_src);
 	$(".footer .social-view h3").html(title_des);
 	$(".footer .social-view a").html(button_des);
+}
+function SigninForm () {
+	$("section.home .content-section .home-content .signin-form").dialog();
 }
