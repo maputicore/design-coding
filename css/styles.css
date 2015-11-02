@@ -7,7 +7,7 @@ menu.left-slider{
 	float: left;
 	width: 45px;
 	height: 100vh;
-	background-color: #526482;
+	background-image: url("../images/left.jpg");
 }
 menu.left-slider .fa-3x{
 	font-size: 2em;
@@ -23,23 +23,47 @@ menu.left-slider li:hover{
 	background-color: #ffffff;
 }
 menu.left-slider li:hover i{
-	color: #999999;
+	color: #007AFF;
 }
 /*MAIN CONTENT STYLE*/
 .main-content{
 	float: left;
 	height: 100vh;
-	background-color: #606700;
+	background-image: url("../images/background.jpg");
+	color: #ffffff;
 }
 .main-content section{
-	margin-left: 30px;
+	margin-left: 45px;
 	margin-right: 30px;
 }
+section{
+	display: none;
+}
+.title-section{
+	height: 33px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.content-section{
+	overflow:auto;
+	padding-right: 30px;
+}
+/*SETTING SCROLL*/
+.content-section::-webkit-scrollbar{
+	width:2px;
+	background-color:#8E8E93;
+	border-radius:2px;
+}
+.content-section::-webkit-scrollbar-thumb{
+background-color:#007AFF;
+border-radius:2px;
+}
+
 /*FOOTER*/
 .main-content .footer .button-control{
 	position: fixed;
 	bottom: 2px;
-	margin-left: 30px;
+	margin-left: 45px;
 }
 .main-content .footer .button-control .button-control-list{
 	list-style: none;
@@ -68,12 +92,38 @@ menu.left-slider li:hover i{
 	font-size: 2em;
 	color: #ffffff;
 }
+.main-content .footer .fa-github:hover{
+	color: #333;
+}
+.main-content .footer .fa-facebook:hover{
+	color: #45619D;
+}
+.main-content .footer .fa-google-plus:hover{
+	color: #53A93F;
+}
+.main-content .footer .fa-twitter:hover{
+	color: #55ACEE;
+}
+/*SOCIAL VIEW*/
+.footer .social-view{
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+}
+.footer .social-view{
+	display: none;
+}
+.footer .social-view ul{
+	padding: 0px;
+}
+.footer .social-view ul li{
+	padding: 0px 20px;
+}
+
+/*ACTIVE CLASS STYLE*/
 .left-slider .active{
 	background-color: #ffffff;
 }
 .left-slider .active-icon{
-	color: #999999 !important;
-}
-section{
-	display: none;
+	color: #007AFF !important;
 }
