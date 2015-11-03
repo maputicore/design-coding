@@ -95,5 +95,8 @@ function SetSocialViewDetails (link_href, image_src, title_des, button_des) {
 	$(".footer .social-view a").html(button_des);
 }
 function SigninForm () {
-	$("section.home .content-section .home-content .signin-form").dialog();
+	$("section.home .content-section .home-content .signin-form-box").show();
+	var width_vale = $(window).width();
+	$("section.home .content-section .home-content .signin-form-box .signin-form").css("margin-left",width_vale/2 - 355);
+	$("section.home .content-section .home-content .signin-form-box .signin-form").show("slide", {direction:'up'} , "easeOutQuint ", 1000);
 }

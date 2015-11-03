@@ -1,7 +1,19 @@
-/*LEFT SLIDER STYLE*/
 ::-moz-selection { color: #007AFF; }
 ::selection { color: #007AFF; }
-
+/*SETTING FONT*/
+@font-face {
+ font-family:linotte_thin;
+ src:url('../fonts/linotte-light.ttf') format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+@font-face {
+ font-family:linotte_regular;
+ src:url('../fonts/linotte-regular.ttf') format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+/*LEFT SLIDER STYLE*/
 menu.left-slider{
 	list-style: none !important;
 	margin: 0px;
@@ -41,6 +53,7 @@ menu.left-slider li:hover i{
 }
 section{
 	display: none;
+	font-family: linotte_thin;
 }
 .title-section{
 	height: 33px;
@@ -80,29 +93,61 @@ section.home .content-section .logo-group .logo-by span{
 section.home .content-section .home-content {
 	font-size: 15px;
 }
+/*SIGN FORM*/
 section.home .content-section .home-content button{
 	padding: 10px 20px;
-	background-color: #ffffff;
-	border: 0px;
+	background-color: rgba(255, 255, 255, 0.0);
+	border: 1px solid #ffffff;
 	font-size: 20px;
-	color: #a18d6c;
-	opacity: 0.9;
-	font-weight: bold;
+	color: #ffffff;
+	font-weight: normal;
 }
 section.home .content-section .home-content button:hover{
-	opacity: 0.5;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 section.home .content-section .home-content .signin-button{
 	text-align: center;
 	margin-top: 50px;
 }
+section.home .content-section .home-content .signin-form-box{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+	display: none;
+	z-index: 9;
+}
 section.home .content-section .home-content .signin-form{
 	width: 800px;
 	height: 400px;
-	position: fixed;
-	top: 100px;
 	background-color: #ffffff;
+	margin-top: 100px !important;
 	display: none;
+	color: #666;
+}
+section.home .content-section .home-content .signin-form .signin-form-title{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background-color: #F1F1F1;
+}
+section.home .content-section .home-content .signin-form .signin-form-title h4{
+	line-height: 50px;
+	float: left;
+	margin: 0px 20px;
+	font-weight: normal;
+	font-size: 20px;
+}
+section.home .content-section .home-content .signin-form .signin-form-title img{
+	width: 30px;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+section.home .content-section .home-content .signin-form .signin-form-content {
+margin: 20px;
 }
 
 /*FOOTER*/
