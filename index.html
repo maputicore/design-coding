@@ -56,12 +56,16 @@
 						<div class="signin-form-box">
 							<div class="signin-form">
 								<div class="signin-form-title">
-									<h4> Sign in </h4>
+									<h4> Sign in / Sign up </h4>
 									<img src="./images/close-button-thin.png" alt="Close" title="Close">
 								</div>
 								<div class="signin-form-content">
-									<form method="POST" accept-charset="utf-8" class="form">
-										<input type="text" name="user_name" value="" placeholder="Enter user name">
+									<form method="POST" accept-charset="utf-8" class="form-signin">
+										<ul class="sign-in">
+											<li><span class="label">User Name</span><input type="text" name="user_name" value="" placeholder="Enter user name"></li>
+											<li><span class="label">Password</span><input type="password" name="password" value="" placeholder="Enter your password"></li>
+										</ul>
+										<input type="submit" name="sign-in" value="Sign in" class="submit-button">
 									</form>
 								</div>
 							</div>
@@ -280,18 +284,21 @@
 					</ul>
 				</div>
 				<div class="social-view">
-					<ul class="grid cs-style-4">
-						<li>
-							<figure>
-								<div><img src="./images/2.png" alt="Image" /></div>
-								<figcaption>
-									<h3></h3>
-									<span>Rails tutorial Admin</span>
-									<a href="" target="blank">Connect us</a>
-								</figcaption>
-							</figure>
-						</li>
-					</ul>
+					<div class="close-button">
+						<img src="./images/close-button-thin.png" alt="Close" title="Close" class="close-social-views-imgages">
+						<ul class="grid cs-style-4">
+							<li>
+								<figure>
+									<div><img src="./images/2.png" alt="Image" /></div>
+									<figcaption>
+										<h3></h3>
+										<span>Rails tutorial Admin</span>
+										<a href="" target="blank">Connect us</a>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</footer>
 		</main>

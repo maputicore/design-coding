@@ -87,6 +87,9 @@ function ShowSocialView () {
 			};
 		});
 	});
+	$(".close-social-views-imgages").click(function() {
+		$(".footer .social-view").hide("slide", {direction:'right'} , "easeOutQuint ", 500);
+	});
 };
 function SetSocialViewDetails (link_href, image_src, title_des, button_des) {
 	$(".footer .social-view ul li figure figcaption a").attr("href", link_href);
