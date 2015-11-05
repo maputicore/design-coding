@@ -2,17 +2,22 @@
 ::selection { color: #007AFF; }
 /*SETTING FONT*/
 @font-face {
- font-family:linotte_thin;
- src:url('../fonts/linotte-light.ttf') format('truetype');
- font-weight:normal;
- font-style:normal;
+	font-family:linotte_thin;
+	src:url('../fonts/linotte-light.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
 }
 @font-face {
- font-family:linotte_regular;
- src:url('../fonts/linotte-regular.ttf') format('truetype');
- font-weight:normal;
- font-style:normal;
+	font-family:linotte_regular;
+	src:url('../fonts/linotte-regular.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
 }
+/*SETTING FOR ALL*/
+input:focus{
+	box-shadow: 0 0 6px #007AFF;
+}
+
 /*LEFT SLIDER STYLE*/
 menu.left-slider{
 	list-style: none !important;
@@ -114,14 +119,23 @@ section.home .content-section .home-content .signin-form-box{
 	top: 0px;
 	left: 0px;
 	background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 	display: none;
 	z-index: 9;
 }
+section.home .content-section .home-content .signin-form-box .hr-line{
+	display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #007AFF;
+    margin: 2em 0em;
+    padding: 0; 
+	/*color: #007AFF;*/
+}
 section.home .content-section .home-content .signin-form{
 	width: 800px;
-	height: 400px;
+	height: 460px;
 	background-color: #ffffff;
 	margin-top: 100px !important;
 	display: none;
@@ -140,6 +154,12 @@ section.home .content-section .home-content .signin-form .signin-form-title h4{
 	font-weight: normal;
 	font-size: 20px;
 }
+.sign-up-title{
+	line-height: normal;
+	margin: 0px;
+	font-size: 20px;
+}
+
 section.home .content-section .home-content .signin-form .signin-form-title img{
 	width: 30px;
 	position: absolute;
@@ -147,14 +167,31 @@ section.home .content-section .home-content .signin-form .signin-form-title img{
 	right: 15px;
 }
 section.home .content-section .home-content .signin-form .signin-form-content {
-margin: 20px;
-font-size: 16px;
-margin: 30px 20px;
+	margin: 20px;
+	font-size: 16px;
+	margin: 30px 20px;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin{
+section.home .content-section .home-content .signin-form .signin-form-content #email{
+	margin-left: 104px;
+}
+section.home .content-section .home-content .signin-form .signin-form-content #pwd{
+	margin-left: 75px;
+}
+section.home .content-section .home-content .signin-form .signin-form-content #cpwd{
+	margin-left: 15px;
+}
+section.home .content-section .home-content .signin-form .signin-form-content #sign-up{
+	margin-top: 15px;
+}
+section.home .content-section .home-content .signin-form .signin-form-content #sign-in{
+	margin-top: 15px;
+}
+
+
+section.home .content-section .home-content .signin-form .signin-form-content .form{
 	position: relative;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin .submit-button{
+section.home .content-section .home-content .signin-form .signin-form-content .form .submit-button{
 	position: absolute;
 	top: 14px;
 	right: 100px;
@@ -162,24 +199,24 @@ section.home .content-section .home-content .signin-form .signin-form-content .f
 	background-color: #fff;
 	border: 1px solid #007AFF;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin .sign-in li{
+section.home .content-section .home-content .signin-form .signin-form-content .form ul li{
 	list-style: none;
 	margin-bottom: 10px;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin .sign-in .label{
+section.home .content-section .home-content .signin-form .signin-form-content .form ul .label{
 	color: #666;
 	padding: 0px;
 	font-weight: normal;
 	font-size: 16px;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin .sign-in li input[type="text"]{
+section.home .content-section .home-content .signin-form .signin-form-content .form ul li input[type="text"]{
 	margin-left: 70px;
 	background-color: #fff;
 	color: #666;
 	padding: 3px;
 	border: 1px solid #007AFF;
 }
-section.home .content-section .home-content .signin-form .signin-form-content .form-signin .sign-in li input[type="password"]{
+section.home .content-section .home-content .signin-form .signin-form-content .form ul li input[type="password"]{
 	margin-left: 79px;
 	background-color: #fff;
 	color: #666;

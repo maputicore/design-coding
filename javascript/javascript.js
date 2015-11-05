@@ -10,15 +10,20 @@ $( document ).ready(function() {
 	SetViewbyClick();
 	// set view by button control
 	ShowSocialView();
-  $(".footer .button-control .fa-arrow-circle-left").click( function () {
+	$(".footer .button-control .fa-arrow-circle-left").click( function () {
 		SetViewbyBackButton();
 	});
-  $(".footer .button-control .fa-arrow-circle-right").click( function () {
+	$(".footer .button-control .fa-arrow-circle-right").click( function () {
 		SetViewbyNextButton();
 	});
 	$("section.home .content-section .home-content button").click(function () {
 		SigninForm();
 	});
+	$(".signin-form #close").click(function () {
+		$("section.home .content-section .home-content .signin-form-box .signin-form").hide("slide", {direction:'up'} , "easeOutQuint ", 1000);
+		$("section.home .content-section .home-content .signin-form-box").hide("slide", {direction:'up'} , "easeOutQuint ", 1000);
+	})
+
 });
 // resize set value
 $( window ).resize(function() {
@@ -98,7 +103,7 @@ function SetSocialViewDetails (link_href, image_src, title_des, button_des) {
 	$(".footer .social-view a").html(button_des);
 }
 function SigninForm () {
-	$("section.home .content-section .home-content .signin-form-box").show();
+	$("section.home .content-section .home-content .signin-form-box").show("slide", {direction:'up'} , "easeOutQuint ", 1000);
 	var width_vale = $(window).width();
 	$("section.home .content-section .home-content .signin-form-box .signin-form").css("margin-left",width_vale/2 - 355);
 	$("section.home .content-section .home-content .signin-form-box .signin-form").show("slide", {direction:'up'} , "easeOutQuint ", 1000);

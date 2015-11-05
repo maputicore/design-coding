@@ -57,15 +57,35 @@
 							<div class="signin-form">
 								<div class="signin-form-title">
 									<h4> Sign in / Sign up </h4>
-									<img src="./images/close-button-thin.png" alt="Close" title="Close">
+									<img src="./images/close-button-thin.png" alt="Close" title="Close" id="close">
 								</div>
 								<div class="signin-form-content">
-									<form method="POST" accept-charset="utf-8" class="form-signin">
-										<ul class="sign-in">
+									<h4 class="sign-up-title">Sign in</h4>
+									<form method="POST" accept-charset="utf-8" class="form">
+										<ul id="sign-in">
 											<li><span class="label">User Name</span><input type="text" name="user_name" value="" placeholder="Enter user name"></li>
 											<li><span class="label">Password</span><input type="password" name="password" value="" placeholder="Enter your password"></li>
 										</ul>
 										<input type="submit" name="sign-in" value="Sign in" class="submit-button">
+									</form>
+									<hr class="hr-line" />
+									<h4 class="sign-up-title">or Sign up</h4>
+									<form method="POST" accept-charset="utf-8" class="form">
+										<ul id="sign-up">
+											<li>
+												<span class="label">Email</span>
+												<input id="email" type="text" name="email-sign-up" value="" placeholder="Enter your email">
+											</li>
+											<li>
+												<span class="label">Password</span>
+												<input id="pwd" type="password" name="email-sign-up" value="" placeholder="Enter your password">
+											</li>
+											<li>
+												<span class="label">Confirm Password</span>
+												<input id="cpwd" type="password" name="email-sign-up" value="" placeholder="Enter your confirm password">
+											</li>
+										</ul>
+										<input type="submit" name="sign-in" value="Sign up" class="submit-button">
 									</form>
 								</div>
 							</div>
@@ -305,3 +325,25 @@
 		<!-- END BODY -->
 	</body>
 </html>
+
+$(document).ready(function () {
+	SetHeight();
+});
+function SetHeight () {
+	if ($('#error_expl').length) {
+  		var height = $(".box .form-horizontal").height();
+		$(".box").css("height", height + 190);
+	};
+};
+
+.btn{
+	border-radius: 0px;
+}
+.btn-xs{
+	padding: 3px 10px;
+}
+input, select, button{
+	border-radius: 0px !important;
+}
+
+validates :name, presence: true
