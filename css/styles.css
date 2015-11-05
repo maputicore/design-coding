@@ -131,7 +131,6 @@ section.home .content-section .home-content .signin-form-box .hr-line{
     border-top: 1px solid #007AFF;
     margin: 2em 0em;
     padding: 0; 
-	/*color: #007AFF;*/
 }
 section.home .content-section .home-content .signin-form{
 	width: 800px;
@@ -186,8 +185,6 @@ section.home .content-section .home-content .signin-form .signin-form-content #s
 section.home .content-section .home-content .signin-form .signin-form-content #sign-in{
 	margin-top: 15px;
 }
-
-
 section.home .content-section .home-content .signin-form .signin-form-content .form{
 	position: relative;
 }
@@ -198,6 +195,9 @@ section.home .content-section .home-content .signin-form .signin-form-content .f
 	padding: 10px 40px;
 	background-color: #fff;
 	border: 1px solid #007AFF;
+}
+section.home .content-section .home-content .signin-form .signin-form-content .form .submit-button:hover{
+	background-color: rgba(0,122,255,0.3);
 }
 section.home .content-section .home-content .signin-form .signin-form-content .form ul li{
 	list-style: none;
@@ -223,7 +223,39 @@ section.home .content-section .home-content .signin-form .signin-form-content .f
 	padding: 3px;
 	border: 1px solid #007AFF;
 }
-.submit-button
+/*SIGNED*/
+section.home .content-section .home-content .more-info {
+	padding-left: 0px;
+	font-size: 18px;
+}
+section.home .content-section .home-content .more-info .inline{
+	margin: 10px 0px;
+	position: relative;
+}
+section.home .content-section .home-content .more-info .inline .label-infor{
+	position: absolute;
+	top: 2px;
+}
+section.home .content-section .home-content .more-info .inline .fa{
+	font-size: 30px;
+	margin-left: 240px;
+	color: #fff;
+}
+section.home .content-section .home-content .more-info .inline .fa:hover{
+	color: #333;
+}
+section.home .content-section .home-content .more-info .inline #facebook{
+	margin-left: 105px;
+}
+section.home .content-section .home-content .more-info .inline #facebook:hover{
+	color: #45619D;
+}
+section.home .content-section .home-content .more-info .inline #twitter{
+	margin-left: 145px;
+}
+section.home .content-section .home-content .more-info .inline #twitter:hover{
+	color: #55ACEE;
+}
 /*FOOTER*/
 .main-content .footer .button-control{
 	position: fixed;

@@ -22,7 +22,10 @@
     <link rel="stylesheet" type="text/css" href="./css/component.css" />
     <script src="./javascript/modernizr.custom.js"></script>
     <script src="./javascript/toucheffects.js"></script>
-     <!-- TITLE -->
+
+    <!-- ADD HOVER CSS -->
+    <link href="./css/hover.css" rel="stylesheet" media="all">
+		<!-- TITLE -->
 		<title>Design layout</title>
 	</head>
 	<body>
@@ -46,13 +49,18 @@
 						<p class="logo-by">by <span>F-centos</span></p>
 					</div>
 					<div class="home-content">
-						<h4>Wellcome to Rails tutorial</h4>
-						<p class="project-des">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						</p>
+					<!-- WELLCOME CONTENT -->
+						<div class="wellcome">
+							<h4>Wellcome to Rails tutorial</h4>
+							<p class="project-des">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+						</div>
+					<!-- SIGN IN BUTTON -->
 						<div class="signin-button">
 							<button>Sign in to see more</button>
 						</div>
+					<!-- SIGN IN POPUP -->
 						<div class="signin-form-box">
 							<div class="signin-form">
 								<div class="signin-form-title">
@@ -88,6 +96,21 @@
 										<input type="submit" name="sign-in" value="Sign up" class="submit-button">
 									</form>
 								</div>
+							</div>
+						</div>
+					<!-- IF SIGNED -->
+						<div class="more-info">
+							<div class="inline">
+								<span class="label-infor">You can see source code on</span>
+								<a href="https://github.com/ngocquyhoang"><i class="fa fa-github"></i></a>
+							</div>
+							<div class="inline">
+								<span class="label-infor">Find us on</span>
+								<a href="https://www.facebook.com/ngocquyhoang.93"><i class="fa fa-facebook" id="facebook"></i></a>
+							</div>
+							<div class="inline">
+								<span class="label-infor">or Follow us on</span>
+								<a href="https://twitter.com/malloryandbob"><i class="fa fa-twitter" id="twitter"></i></a>
 							</div>
 						</div>
 					</div>
@@ -325,25 +348,3 @@
 		<!-- END BODY -->
 	</body>
 </html>
-
-$(document).ready(function () {
-	SetHeight();
-});
-function SetHeight () {
-	if ($('#error_expl').length) {
-  		var height = $(".box .form-horizontal").height();
-		$(".box").css("height", height + 190);
-	};
-};
-
-.btn{
-	border-radius: 0px;
-}
-.btn-xs{
-	padding: 3px 10px;
-}
-input, select, button{
-	border-radius: 0px !important;
-}
-
-validates :name, presence: true
