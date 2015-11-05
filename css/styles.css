@@ -17,7 +17,17 @@
 input:focus{
 	box-shadow: 0 0 6px #007AFF;
 }
-
+a{
+	color: #fff;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+hr{
+	width: 80%;
+	margin-left: 10% !important;
+}
 /*LEFT SLIDER STYLE*/
 menu.left-slider{
 	list-style: none !important;
@@ -68,16 +78,6 @@ section{
 .content-section{
 	overflow:auto;
 	padding-right: 30px;
-}
-/*SETTING SCROLL*/
-.content-section::-webkit-scrollbar{
-	width:2px;
-	background-color:#8E8E93;
-	border-radius:2px;
-}
-.content-section::-webkit-scrollbar-thumb{
-background-color:#007AFF;
-border-radius:2px;
 }
 /*##############HOME############*/
 section.home .content-section .logo-group{
@@ -227,9 +227,10 @@ section.home .content-section .home-content .signin-form .signin-form-content .f
 section.home .content-section .home-content .more-info {
 	padding-left: 0px;
 	font-size: 18px;
+	margin-top: 25px;
 }
 section.home .content-section .home-content .more-info .inline{
-	margin: 10px 0px;
+	margin: 5px 0px;
 	position: relative;
 }
 section.home .content-section .home-content .more-info .inline .label-infor{
@@ -256,6 +257,54 @@ section.home .content-section .home-content .more-info .inline #twitter{
 section.home .content-section .home-content .more-info .inline #twitter:hover{
 	color: #55ACEE;
 }
+/*BLOG*/
+section.blog .blog-post-list{
+	display: block;
+}
+section.blog .blog-post-list .blog-post-content{
+	display: block;
+	color: #fff;
+	font-size: 15px;
+}
+.post-title{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+.time-post{
+	text-align: center;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+.post-image{
+	text-align: center;
+	width: 60%;
+	margin: 30px 0px 30px 20%;
+}
+.post-content{
+	margin-bottom: 30px;
+}
+section.blog .blog-post-list hr{
+	width: 75%;
+}
+.center-width{
+	width: 84%;
+	margin-left: 8%;
+}
+/*SETTING*/
+section.setting .setting-content .coming-soon{
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	background-color: rgba(255,255,255,0.65);
+	margin: 80px auto;
+}
+section.setting .setting-content .coming-soon .text{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 80px;
+}
+
 /*FOOTER*/
 .main-content .footer .button-control{
 	position: fixed;
@@ -288,6 +337,9 @@ section.home .content-section .home-content .more-info .inline #twitter:hover{
 .main-content .footer .fa-3x{
 	font-size: 2em;
 	color: #ffffff;
+}
+.main-content .footer .fa-3x:hover{
+	color: #007AFF;
 }
 .main-content .footer .fa-github:hover{
 	color: #333;

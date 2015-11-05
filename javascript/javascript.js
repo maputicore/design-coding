@@ -6,6 +6,7 @@ $( document ).ready(function() {
 	// none scroll
 	$('html').css('overflow', 'hidden');
 	SetWidthValue();
+	$(".content-section").mCustomScrollbar({theme:"light-thin",scrollButtons:{enable:true}});
 	SetContentHeightValue();
 	SetViewbyClick();
 	// set view by button control
