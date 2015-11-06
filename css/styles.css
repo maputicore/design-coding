@@ -295,14 +295,32 @@ section.blog .blog-post-list hr{
 section.setting .setting-content .coming-soon{
 	width: 250px;
 	height: 250px;
-	border-radius: 125px;
+	border-radius: 200px;
 	background-color: rgba(255,255,255,0.65);
-	margin: 80px auto;
+	margin: 100px auto;
+  -webkit-transition: margin-top 2s,width 2s, height 2s;
+  transition: margin-top 2s,width 2s, height 2s;
+  border: 1px solid #fff;
 }
 section.setting .setting-content .coming-soon .text{
 	text-align: center;
 	font-size: 40px;
-	padding-top: 80px;
+	padding-top: 79px;
+	margin: 0px;
+	-webkit-transition: font-size 2s,padding-top 2s;
+	-webkit-transform 2s;
+  transition: font-size 2s,padding-top 2s, transform 2s;
+}
+section.setting .setting-content .coming-soon:hover{
+	width: 350px;
+	height: 350px;
+	margin-top: 50px;
+}
+section.setting .setting-content .coming-soon:hover .text{
+	font-size: 56px;
+	padding-top: 110px;
+	-webkit-transform: rotate(360deg); /* Safari */
+	transform: rotate(360deg);
 }
 /*ABOUT US*/
 section.about-us .about-member .team-member{
