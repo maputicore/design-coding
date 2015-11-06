@@ -304,7 +304,35 @@ section.setting .setting-content .coming-soon .text{
 	font-size: 40px;
 	padding-top: 80px;
 }
-
+/*ABOUT US*/
+section.about-us .about-member .team-member{
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 15px;
+}
+section.about-us .about-member .team-member li{
+	clear: both;
+	display: inline-block;
+	width: 350px;
+	position: relative;
+	padding: 10px 0px;
+}
+section.about-us .about-member .team-member li img{
+	width: 91px;
+	position: absolute;
+}
+section.about-us .about-member .team-member li div{
+	display: inline-block;
+	margin-left: 120px;
+}
+section.about-us .about-us-info img{
+	width: 350px;
+	float: left;
+	margin-right: 30px;
+}
+section.about-us .about-us-info{
+	margin-top: 30px;
+}
 /*FOOTER*/
 .main-content .footer .button-control{
 	position: fixed;
