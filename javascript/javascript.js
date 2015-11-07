@@ -83,13 +83,13 @@ function ShowSocialView () {
 			var AttrName = $(this).attr('title');
 			$(".footer .social-view").toggle("slide", {direction:'right'} , "easeOutQuint ", 500);
 			switch (AttrName){
-			   case "Github": {SetSocialViewDetails("https://github.com/ngocquyhoang", "./images/git.png", AttrName, "Connect us on <br />" + AttrName)};
+			   case "Github": {SetSocialViewDetails("https://github.com/ngocquyhoang", "./images/github.jpg", AttrName, "Connect us on <br />" + AttrName)};
 			   break;
-			   case "Facebook": {SetSocialViewDetails("https://www.facebook.com/ngocquyhoang.93", "./images/git.png", AttrName, "Connect us on <br />" + AttrName)};
+			   case "Facebook": {SetSocialViewDetails("https://www.facebook.com/ngocquyhoang.93", "./images/facebook.jpg", AttrName, "Connect us on <br />" + AttrName)};
 			   break;				   
-			   case "Goolge Plus": {SetSocialViewDetails("https://www.google.com", "./images/git.png", AttrName, "Connect us on <br />" + AttrName)};
+			   case "Goolge Plus": {SetSocialViewDetails("https://www.google.com", "./images/google-plus.jpg", AttrName, "Connect us on <br />" + AttrName)};
 			   break;
-			   default: {SetSocialViewDetails("https://twitter.com/malloryandbob", "./images/git.png", AttrName, "Connect us on <br />" + AttrName)};
+			   default: {SetSocialViewDetails("https://twitter.com/malloryandbob", "./images/twitter.jpg", AttrName, "Connect us on <br />" + AttrName)};
 			};
 		});
 	});
@@ -99,7 +99,7 @@ function ShowSocialView () {
 };
 function SetSocialViewDetails (link_href, image_src, title_des, button_des) {
 	$(".footer .social-view ul li figure figcaption a").attr("href", link_href);
-	// $(".footer .social-view ul li figure div img").attr("src", image_src);
+	$(".footer .social-view ul li figure div img").attr("src", image_src);
 	$(".footer .social-view h3").html(title_des);
 	$(".footer .social-view a").html(button_des);
 }

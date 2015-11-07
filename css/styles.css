@@ -84,7 +84,7 @@ section.home .content-section .logo-group{
 	text-align: center;
 }
 section.home .content-section .logo-group .logo-image{
-	width: 150px;
+	width: 250px;
 }
 section.home .content-section .logo-group .logo-name{
 	font-size: 40px;
@@ -351,6 +351,52 @@ section.about-us .about-us-info img{
 section.about-us .about-us-info{
 	margin-top: 30px;
 }
+/*CONTACT*/
+section.contact .contact-content .form-table{
+	background-color: rgba(255,255,255,0.4);
+	font-size: 20px;
+	color: #fff;
+	margin-left: 10%;
+	margin-top: 20px;
+	padding: 40px 30px;
+	display: inline-block;
+	width: 40%;
+	min-width: 350px;
+	float: left;
+}
+section.contact .contact-content .form-table .contact-form-element{
+	width: 100%;
+	background-color: rgba(255,255,255,0.0);
+	border: 1px solid #fff;
+	margin-bottom: 13px;
+	padding: 3px;
+}
+section.contact .contact-content .form-table .send-button{
+	padding: 5px 10px;
+	background-color: rgba(255,255,255,0.0);
+	border: 1px solid #fff;
+}
+section.contact .contact-content .form-table .send-button:hover{
+	background-color: rgba(255,255,255,0.6);	
+}
+section.contact .contact-content .form-table .contact-form-element:focus{
+	box-shadow: none;
+}
+section.contact .contact-content .form-table p{
+	margin-bottom: 5px;
+}
+section.contact .contact-content .form-table .message-text{
+	height: 150px;
+}
+section.contact .contact-content .mem-text{
+	float: left;
+	width: 35%;
+	display: inline-block;
+	margin-left: 8%;
+	min-width: 300px;
+	font-size: 20px;
+	padding-top: 20px;
+}
 /*FOOTER*/
 .main-content .footer .button-control{
 	position: fixed;
@@ -410,15 +456,23 @@ section.about-us .about-us-info{
 }
 .footer .social-view a{
 	text-decoration: none;
-	background-color: #ffffff;
-	color: #007AFF;
+	color: #fff;
 	border-radius: 0px;
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0.0);
+	font-family: linotte_thin;
+}
+.footer .social-view a:hover{
+	background-color: rgba(255,255,255,0.5);
 }
 .footer .social-view span{
 	color: #ffffff;
 }
 .footer .social-view figcaption{
-	background-color: #007AFF;
+	background-image: url('../images/social-background-text-show.jpg');
+}
+.footer .social-view figcaption h3{
+	font-family: linotte_thin;
 }
 .footer .social-view ul{
 	padding: 0px;
