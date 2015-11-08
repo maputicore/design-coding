@@ -35,10 +35,13 @@ menu.left-slider{
 	padding: 0px;
 	text-align: center;
 	float: left;
-	width: 45px;
+	width: 130px;
 	height: 100vh;
 	background-image: url("../images/left.jpg");
+	position: absolute;
+	background-size: 100%;
 }
+
 menu.left-slider .fa-3x{
 	font-size: 2em;
 	color: #ffffff;
@@ -47,13 +50,30 @@ menu.left-slider li.home{
 	margin-top: 35px;
 }
 menu.left-slider li{
-	padding: 15px 0px;
+	height: 45px;
+	padding-top: 10px;
 }
 menu.left-slider li:hover{
 	background-color: #ffffff;
 }
+menu.left-slider li span:first-child {
+	display: inline;
+	vertical-align: bottom;
+	width: 45px;
+	height: 45px;
+	float: left;
+}
+menu.left-slider li span.label {
+	display: inline;
+	font-size: 14px;
+	padding-left: 10px;
+	float: left;
+}
 menu.left-slider li:hover i{
 	color: #007AFF;
+}
+menu.left-slider li.active span.label {
+	color: #007AFF !important;
 }
 /*MAIN CONTENT STYLE*/
 .main-content{
@@ -61,6 +81,8 @@ menu.left-slider li:hover i{
 	height: 100vh;
 	background-image: url("../images/background.jpg");
 	color: #ffffff;
+	width: 100%;
+	padding-left: 130px;
 }
 .main-content section{
 	margin-left: 45px;
@@ -500,4 +522,19 @@ section.contact .contact-content .mem-text{
 }
 .left-slider .active-icon{
 	color: #007AFF !important;
+}
+
+
+
+
+@media (max-width: 1028px) {
+.main-content{
+	padding-left: 45px !important;
+}
+menu.left-slider{
+	width: 45px;	
+}
+menu.left-slider > li span.label {
+	display: none !important;
+}
 }
